@@ -1,0 +1,37 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		spaceAround();
+		space();
+		lineStars();
+		space();
+		star();
+		
+		newLine();
+		lineStars();
+		space();
+		lineStars();
+	}
+	
+	public static void spaceAround() {
+		System.out.print("*     *");
+	}
+	
+	public static void lineStars() {
+		System.out.print("*******");
+	}
+	
+	public static void space() {
+		System.out.print(" ");
+	}
+	
+	public static void leftStar() {
+		System.out.print("*     ");
+	}
+	
+	public static void newLine() {
+		System.out.println();
+	}
+}
