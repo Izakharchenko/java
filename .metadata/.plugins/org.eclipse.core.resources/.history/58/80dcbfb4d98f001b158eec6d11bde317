@@ -1,0 +1,7 @@
+
+public class Pet {
+    int age;
+    float weight;
+    float heigth;
+    String color;
+}

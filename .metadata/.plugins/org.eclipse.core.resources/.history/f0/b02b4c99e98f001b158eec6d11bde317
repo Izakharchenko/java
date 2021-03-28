@@ -1,0 +1,4 @@
+
+public class JamesCar extends Car {
+
+}
