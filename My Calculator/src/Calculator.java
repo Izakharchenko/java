@@ -6,6 +6,7 @@ import java.awt.Font;
 public class Calculator {
 	JPanel windowContent;
 	JPanel pl;
+	JPanel p2;
 	JTextField displayField;
 	JButton button0;
 	JButton button1;
@@ -19,6 +20,10 @@ public class Calculator {
 	JButton button9;
 	JButton buttonPoint;
 	JButton buttonEqual;
+	JButton buttonSubtraction;
+	JButton buttonDivision;
+	JButton buttonMultiplication;
+	
 	
 	Calculator() {
 		windowContent = new JPanel();
