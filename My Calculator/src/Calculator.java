@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.GridLayout;
 import java.awt.BorderLayout;
-import java.awt.Font;
 
 public class Calculator {
 	JPanel windowContent;
