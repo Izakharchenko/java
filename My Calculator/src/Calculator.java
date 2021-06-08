@@ -7,7 +7,7 @@ public class Calculator {
 	JPanel windowContent;
 	JPanel pl;
 	JPanel p2;
-	JTextField displayField;
+	JFormattedTextField displayField;
 	JButton button0;
 	JButton button1;
 	JButton button2;
@@ -33,7 +33,8 @@ public class Calculator {
 		windowContent.setLayout(bl);
 		
 		
-		displayField = new JTextField(30);
+		displayField = new JFormattedTextField(0);
+		displayField.setHorizontalAlignment(JTextField.RIGHT);
 		windowContent.add("North", displayField);
 		
 		button0 = new JButton("0");
