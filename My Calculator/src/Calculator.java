@@ -75,6 +75,18 @@ public class Calculator {
 		frame.setContentPane(windowContent);
 		frame.pack();
 		frame.setVisible(true);
+		
+		CalculatorEngine calculatorEngine = new CalculatorEngine(this);
+		
+		for (int i = 0; i < numButtons.length; i++) {
+			numButtons[i].addActionListener(calculatorEngine);
+		}
+		
+		buttonAdd.addActionListener(calculatorEngine);
+		buttonSubtraction.addActionListener(calculatorEngine);
+		buttonDivision.addActionListener(calculatorEngine);
+		buttonMultiplication.addActionListener(calculatorEngine);
+		buttonEqual.addActionListener(calculatorEngine);
 	}
 	
 	public static void main(String[] args) {
