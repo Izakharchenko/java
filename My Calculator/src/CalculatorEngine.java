@@ -31,18 +31,22 @@ public class CalculatorEngine implements ActionListener {
 			selectedAction = '+';
 			currentResult = displayValue;
 			parent.displayField.setText("");
+			
 		} else if (src == parent.buttonSubtraction) {
 			selectedAction = '-';
 			currentResult = displayValue;
 			parent.displayField.setText("");
+			
 		} else if (src == parent.buttonDivision) {
 			selectedAction = '/';
 			currentResult = displayValue;
-			parent.displayField.setText(""); 
+			parent.displayField.setText("");
+			
 		} else if (src == parent.buttonMultiplication) {
 			selectedAction = '*';
 			currentResult = displayValue;
 			parent.displayField.setText("");
+			
 		} else if(src == parent.buttonEqual) {
 			if (selectedAction == '+') {
 				currentResult += displayValue;
@@ -51,12 +55,23 @@ public class CalculatorEngine implements ActionListener {
 				currentResult -= displayValue;
 				parent.displayField.setText("" + currentResult);
 			} else if (selectedAction == '/') {
-				currentResult /= displayValue;
-				parent.displayField.setText("" + currentResult);
+				if(displayValue == 0) {
+					parent.displayField.setText("На нуль ділити не можна!");
+				} else {
+					currentResult /= displayValue;
+					parent.displayField.setText("" + currentResult);
+				}
 			} else if (selectedAction == '*') {
 				currentResult *= displayValue;
 				parent.displayField.setText("" + currentResult);
 			}
+		} else if(src == parent.buttonPoint) {
+			int hasAdot = displayField.indexOf(".");
+			final int codeWhenNoSearchedString = -1;
+			if (hasAdot == codeWhenNoSearchedString) {
+				 parent.displayField.setText("" + displayValue);
+			}
+			
 		} else {
 			parent.displayField.setText(displayField + clickedButtonLabel);
 		}
