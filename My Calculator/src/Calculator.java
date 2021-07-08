@@ -8,15 +8,6 @@ public class Calculator {
 	JPanel p2;
 	JFormattedTextField displayField;
 	JButton [] numButtons = new JButton[10];
-//	JButton button1;
-//	JButton button2;
-//	JButton button3;
-//	JButton button4;
-//	JButton button5;
-//	JButton button6;
-//	JButton button7;
-//	JButton button8;
-//	JButton button9;
 	JButton buttonPoint;
 	JButton buttonEqual;
 	JButton buttonAdd;
@@ -87,6 +78,7 @@ public class Calculator {
 		buttonDivision.addActionListener(calculatorEngine);
 		buttonMultiplication.addActionListener(calculatorEngine);
 		buttonEqual.addActionListener(calculatorEngine);
+		buttonPoint.addActionListener(calculatorEngine);
 	}
 	
 	public static void main(String[] args) {
